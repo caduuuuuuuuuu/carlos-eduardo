@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center>  <h1>VOTAÇÃO</h1>
+<div><img src="1.png" alt=""></div>
+<button onclick="a1()">1</button>
+<div><img src="2.png" alt=""></div>
+<button onclick="a2()">2</button>
+
+
+
+<section id="s1"><p> Resultado 1</p></section>
+<section id="s2"><p> Resultado 2</p></section>
+
+<script>
+
+
+
+let contador1 = 0
+let contador2 = 0
+
+
+
+let vot1 = document.querySelector('section#s1')
+let vot2 = document.querySelector('section#s2')
+
+
+function a1(){
+contador1++
+vot1.innerHTML = `<p>candidatoA <mark>${contador1}
+</mark> votos!!!</p>`
+}
+function a2(){
+contador2++
+vot2.innerHTML = `<p>candidatoB <mark>${contador2}
+</mark> votos!!!</p>`
+}   
+</script></center>
+
+</body>
+</html>
